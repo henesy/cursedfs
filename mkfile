@@ -3,12 +3,10 @@
 TARG = cursedfs
 
 OFILES = \
-	cursed.$O \
-	cursedfs.$O
+	main.$O \
 
 HFILES = \
-	cursed.h \
-	9curses.h
+	fs.h
 
 BIN = $home/bin/$objtype
 

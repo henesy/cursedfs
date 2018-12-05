@@ -1,0 +1,23 @@
+</$objtype/mkfile
+
+#LIB=/$objtype/lib/lib9curses.a
+LIB=$home/lib/$objtype/lib9curses.a
+
+FILES=\
+	9curses
+
+HFILES=/sys/include/9curses.h
+
+CFILES=${FILES:%=%.c}
+
+OFILES=${FILES:%=%.$O}
+
+UPDATE=mkfile\
+	$LIB\
+	$HFILES\
+	$CFILES\
+
+</sys/src/cmd/mksyslib
+
+h:V: 9curses.h
+	cp -x $prereq /sys/include
